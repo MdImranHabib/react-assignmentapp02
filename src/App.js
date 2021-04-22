@@ -1,4 +1,5 @@
 import './App.css';
+import Card from "./Card"
 
 function App() {
   return (
@@ -24,9 +25,21 @@ function App() {
               </li>    
             </ul>
           </div> 
-
         </div>  
-      </nav>  
+      </nav>
+      <div className="container">
+        <div className="row">
+          <div className="col-md-4">
+            <Card imgSource="https://picsum.photos/400" />
+          </div>
+          <div className="col-md-4">
+            <Card imgSource="https://source.unsplash.com/random/400x400" />
+          </div>
+          <div className="col-md-4">
+            <Card imgSource="https://loremflickr.com/400/400" />
+          </div>
+        </div> 
+      </div> 
     </div>
   );
 }
